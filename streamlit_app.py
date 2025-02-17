@@ -7,7 +7,7 @@ page = st.sidebar.radio("Select a page:", ["Main Page", "Page 1", "Page 2"])
 
 if page == "Main Page":
     st.title("PCOS Predictor")
-    st.header("About the App")
+    st.header("burp")
     st.write(
         "Here is some information about our app."
     )
