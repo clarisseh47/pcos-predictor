@@ -1,6 +1,17 @@
 import streamlit as st
+import page1_name
+import page2_name
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Select a page:", ["Main Page", "Page 1", "Page 2"])
+
+if page == "Main Page":
+    st.title("PCOS Predictor")
+    st.header("About the App")
+    st.write(
+        "Here is some information about our app."
+    )
+elif page == "Page 1":
+    page1_name.display_page()
+elif page == "Page 2":
+    page2_name.display_page()
